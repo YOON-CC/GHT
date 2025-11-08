@@ -6,7 +6,8 @@ import './App.css';
 
 const practiceIdeas: PracticeIdea[] = [
   {
-    title: 'TEXT COMPONENT2222 ###dev dev dev',
+    title: 'TEXT COMPONENT22225',
+    
     description: '사용자 이름을 입력받아 화면에 표시하는 컴포넌트를 추가해보세요.',
     difficulty: 'easy'
   },
@@ -21,6 +22,8 @@ const practiceIdeas: PracticeIdea[] = [
     difficulty: 'challenge'
   }
 ];
+
+// 여기서 계속 추가할 예정
 
 function App() {
   const [count, setCount] = useState(0);
