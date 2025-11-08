@@ -6,7 +6,6 @@ import './App.css';
 const practiceIdeas: PracticeIdea[] = [
   {
     title: 'TEXT COMPONENDEV',
-    
     description: '사용자 이름을 입력받아 화면에 표시하는 컴포넌트를 추가해보세요.',
     difficulty: 'easy'
   },
