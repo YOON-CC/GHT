@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './AppHeader.css';
 
 type AppHeaderProps = {
@@ -7,6 +8,8 @@ type AppHeaderProps = {
 };
 
 function AppHeader({ title, subtitle, description }: AppHeaderProps) {
+
+  const [count, setCount] = useState(0);
   return (
     <header className="app-header">
       <p className="app-header__eyebrow">{subtitle}</p>
