@@ -25,7 +25,7 @@ const practiceIdeas: PracticeIdea[] = [
 // dev 입니다.
 
 // fixfix
-
+// fixfix22
 function App() {
   const [count, setCount] = useState(0);
 
