@@ -42,7 +42,6 @@ function App() {
             onDecrement={() => setCount((c) => c - 1)}
             onReset={() => setCount(0)}
           />
-          <PracticeIdeas ideas={practiceIdeas} />
         </main>
       </div>
     </div>
