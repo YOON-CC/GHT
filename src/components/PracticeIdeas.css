@@ -1,0 +1,83 @@
+.practice {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 2.25rem;
+  border-radius: 1.5rem;
+  background: rgba(30, 41, 59, 0.85);
+  color: #e2e8f0;
+  box-shadow: 0 20px 36px -18px rgba(15, 23, 42, 0.55);
+}
+
+.practice__title {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.practice__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.practice__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem 1.25rem;
+  align-items: baseline;
+}
+
+.practice__item h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #f8fafc;
+}
+
+.practice__item p {
+  margin: 0.35rem 0 0;
+  font-size: 0.98rem;
+  color: rgba(226, 232, 240, 0.85);
+  line-height: 1.6;
+}
+
+.practice__badge {
+  align-self: flex-start;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 700;
+  color: #0f172a;
+  background: rgba(148, 163, 184, 0.7);
+}
+
+.practice__badge--easy {
+  background: rgba(134, 239, 172, 0.85);
+}
+
+.practice__badge--medium {
+  background: rgba(147, 197, 253, 0.85);
+}
+
+.practice__badge--challenge {
+  background: rgba(254, 202, 202, 0.95);
+}
+
+@media (max-width: 600px) {
+  .practice {
+    padding: 1.75rem;
+  }
+
+  .practice__item {
+    grid-template-columns: 1fr;
+  }
+
+  .practice__badge {
+    justify-self: flex-start;
+  }
+}

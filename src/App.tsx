@@ -1,27 +1,50 @@
 import { useState } from 'react';
+import AppHeader from './components/AppHeader';
+import CounterCard from './components/CounterCard';
+import PracticeIdeas, { PracticeIdea } from './components/PracticeIdeas';
 import './App.css';
+
+const practiceIdeas: PracticeIdea[] = [
+  {
+    title: '입력 폼 만들기',
+    description: '사용자 이름을 입력받아 화면에 표시하는 컴포넌트를 추가해보세요.',
+    difficulty: 'easy'
+  },
+  {
+    title: '컴포넌트 분리 연습',
+    description: '카운터 버튼을 별도의 컴포넌트로 분리하고 props로 동작을 제어해보세요.',
+    difficulty: 'medium'
+  },
+  {
+    title: 'API 요청 처리',
+    description: '공공 API를 호출해 데이터를 화면에 렌더링하는 비동기 로직을 추가해보세요.',
+    difficulty: 'challenge'
+  }
+];
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="app">
-      <header className="app__header">
-        <h1>React + TypeScript 연습</h1>
-        <p>간단한 카운터 컴포넌트로 상태 관리를 연습해보세요.</p>
-      </header>
+      <div className="app__background" aria-hidden />
+      <div className="app__layout">
+        <AppHeader
+          subtitle="React + TypeScript"
+          title="연습용 스타터 킷"
+          description="컴포넌트를 추가하거나 상태 로직을 확장하면서 타입스크립트와 친해져보세요."
+        />
 
-      <section className="app__counter">
-        <span className="app__count">{count}</span>
-        <div className="app__actions">
-          <button type="button" onClick={() => setCount((c) => c + 1)}>
-            증가
-          </button>
-          <button type="button" onClick={() => setCount(0)}>
-            초기화
-          </button>
-        </div>
-      </section>
+        <main className="app__content">
+          <CounterCard
+            count={count}
+            onIncrement={() => setCount((c) => c + 1)}
+            onDecrement={() => setCount((c) => c - 1)}
+            onReset={() => setCount(0)}
+          />
+          <PracticeIdeas ideas={practiceIdeas} />
+        </main>
+      </div>
     </div>
   );
 }
