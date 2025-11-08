@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import AppHeader from './components/AppHeader';
 import CounterCard from './components/CounterCard';
 import PracticeIdeas, { PracticeIdea } from './components/PracticeIdeas';
 import './App.css';
 
 const practiceIdeas: PracticeIdea[] = [
   {
-    title: 'TEXT COMPONENT2222 ###dev dev dev',
+    title: 'TEXT COMPONENT22225',
+    
     description: '사용자 이름을 입력받아 화면에 표시하는 컴포넌트를 추가해보세요.',
     difficulty: 'easy'
   },
@@ -22,6 +22,9 @@ const practiceIdeas: PracticeIdea[] = [
   }
 ];
 
+// 여기서 계속 추가할 예정
+// f1f1f1
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -29,12 +32,6 @@ function App() {
     <div className="app">
       <div className="app__background" aria-hidden />
       <div className="app__layout">
-        <AppHeader
-          subtitle="React + TypeScript"
-          title="연습용 스타터 킷"
-          description="컴포넌트를 추가하거나 상태 로직을 확장하면서 타입스크립트와 친해져보세요."
-        />
-
         <main className="app__content">
           <CounterCard
             count={count}

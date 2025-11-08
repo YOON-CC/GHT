@@ -16,6 +16,7 @@ function AppHeader({ title, subtitle, description }: AppHeaderProps) {
   return (
     <header className="app-header">
       <p className="app-header__eyebrow">{subtitle}</p>
+      <p>추가</p>
       <h1 className="app-header__title">{title}</h1>
       {description ? <p className="app-header__description">{description}</p> : null}
     </header>
