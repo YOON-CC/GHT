@@ -8,6 +8,8 @@ type CounterCardProps = {
 };
 
 function CounterCard({ count, onIncrement, onDecrement, onReset }: CounterCardProps) {
+
+  // ###dev dev dev
   return (
     <section className="counter-card">
       <div className="counter-card__badge">카운터 실습</div>
