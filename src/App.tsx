@@ -5,8 +5,7 @@ import './App.css';
 
 const practiceIdeas: PracticeIdea[] = [
   {
-    title: 'TEXT COMPONENDEV',
-    
+    title: 'TEXT COMPONENfix',
     description: '사용자 이름을 입력받아 화면에 표시하는 컴포넌트를 추가해보세요.',
     difficulty: 'easy'
   },
@@ -23,7 +22,9 @@ const practiceIdeas: PracticeIdea[] = [
 ];
 
 // dev 입니다.
-
+// ㅎㅇㅎㅇ
+// fixfix
+// fixfix22
 function App() {
   const [count, setCount] = useState(0);
 
