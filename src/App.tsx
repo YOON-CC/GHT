@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import AppHeader from './components/AppHeader';
 import CounterCard from './components/CounterCard';
 import PracticeIdeas, { PracticeIdea } from './components/PracticeIdeas';
 import './App.css';
@@ -32,12 +31,6 @@ function App() {
     <div className="app">
       <div className="app__background" aria-hidden />
       <div className="app__layout">
-        <AppHeader
-          subtitle="React + TypeScript"
-          title="연습용 스타터 킷"
-          description="컴포넌트를 추가하거나 상태 로직을 확장하면서 타입스크립트와 친해져보세요."
-        />
-
         <main className="app__content">
           <CounterCard
             count={count}
